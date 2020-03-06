@@ -1,0 +1,1 @@
+package com.zebra.savanna.Models;/** * ProductType --- The type of product being recalled (drug, device, or food). *  * @author SLippert@zebra.com *  */public enum ProductType {	/**	 * The recalled product is a drug product.	 */	Drugs,	/**	 * The recalled product is a device product.	 */	Devices,	/**	 * The recalled product is a food product.	 */	Food,}
