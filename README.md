@@ -25,28 +25,41 @@ Usage guide
 
 Set Zebra Savanna API key
 
-`SavannaAPI.setAPIKey(sharedPreferences.getString("apikey", ""));`
+```java
+SavannaAPI.setAPIKey(sharedPreferences.getString("apikey", ""));
+```
 
 Create Barcode
 
-`byte[] barcodeBytes = CreateBarcode.create(symbology, barcodeText.Text);`
+```java
+byte[] barcodeBytes = CreateBarcode.create(symbology, barcodeText.Text);
+```
 
 UPC Lookup
 
-`String upcLookupJson = UPCLookup.lookup(barcode);`
+```java
+String upcLookupJson = UPCLookup.lookup(barcode);`
 
 FDA Food Recall
 
-`String foodUpcJson = FDARecall.foodUpc(barcode);`
+```java
+String foodUpcJson = FDARecall.foodUpc(barcode);
+```
 
 FDA Drug Recall
 
-`String drugUpcJson = FDARecall.drugUpc(barcode);`
+```java
+String drugUpcJson = FDARecall.drugUpc(barcode);
+```
 
 FDA Device Recall Search
 
-`String deviceSearchJson = FDARecall.deviceSearch(searchText.Text);`
+```java
+String deviceSearchJson = FDARecall.deviceSearch(searchText.Text);
+```
 
 FDA Drug Recall Search
 
-`String drugSearchJson = FDARecall.drugSearch(searchText.Text);`
+```java
+String drugSearchJson = FDARecall.drugSearch(searchText.Text);
+```
