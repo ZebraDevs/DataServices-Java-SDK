@@ -39,6 +39,7 @@ UPC Lookup
 
 ```java
 String upcLookupJson = UPCLookup.lookup(barcode);`
+```
 
 FDA Food Recall
 
